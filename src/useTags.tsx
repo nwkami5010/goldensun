@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {createId} from './lib/createId';
 
+
 const defaultTags = [
   {id: createId(), name: '衣'},
   {id: createId(), name: '食'},
@@ -25,8 +26,14 @@ const useTags = () => {
     const tagsClone = JSON.parse(JSON.stringify(tags));
     tagsClone.splice(index, 1 ,{id:id,name: obj.name});
     setTags(tagsClone);
-  }
-  return {tags, setTags,findTag,updateTag, findTagIndex}
+  };
+  const deleteTag = (id: number) => {
+    const index = findTagIndex(id);
+    const tagsClone = JSON.parse(JSON.stringify(tags));
+    tagsClone.splice(index, 1);
+    setTags(tagsClone);
+  };
+  return {tags, setTags,findTag,updateTag, findTagIndex,deleteTag}
 };
 
 export {useTags}
