@@ -11,6 +11,7 @@ import { NumberPadSection } from './Money/NumberPadSection';
 
 
 
+
 const MyLayout = styled(Layout)`
   display: flex;
   flex-direction: column;
@@ -27,6 +28,7 @@ function Money() {
   const onChange = (obj: Partial<typeof selected>)=> {
     setSelected({...selected, ...obj})
   }
+
   return (
     <MyLayout>
       <TagsSection value={selected.tagIds}
