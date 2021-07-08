@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
-import {createId} from './lib/createId';
-import {useUpdate} from './hooks/useUpdate';
+import {createId} from 'lib/createId';
+import {useUpdate} from './useUpdate';
 
 
 
