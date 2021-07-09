@@ -1,11 +1,12 @@
 import {useEffect, useState} from 'react';
 import {useUpdate} from './useUpdate';
 
-type RecordItem = {
+export type RecordItem = {
   tagIds : number[]
   note: string
   category: '+' | '-'
   amount: number
+  createdAt: string
 }
 
 type newRecordItem = Omit<RecordItem,'createdAt'>
