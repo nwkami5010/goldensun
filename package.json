@@ -2,6 +2,7 @@
   "name": "goldensun",
   "version": "0.1.0",
   "private": true,
+  "homepage": " https://nwkami5010.gitee.io/goldensun",
   "dependencies": {
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
@@ -24,10 +25,12 @@
     "camelcase": "^6.1.0",
     "case-sensitive-paths-webpack-plugin": "2.3.0",
     "classnames": "^2.3.1",
+    "commander": "^8.1.0",
     "css-loader": "4.3.0",
     "dayjs": "^1.10.6",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
+    "echarts": "^5.1.2",
     "eslint": "^7.11.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.2.0",
@@ -81,7 +84,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "deploy": "sh scripts/deploy.sh"
   },
   "eslintConfig": {
     "extends": [
